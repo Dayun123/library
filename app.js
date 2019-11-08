@@ -19,6 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// bust the cache for development: https://stackoverflow.com/a/53240717/5347875
+app.use((req, res, next) => {
+  if (req.app.get('env') === 'development') {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+  }
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
