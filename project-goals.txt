@@ -1,0 +1,19 @@
+Need a place to put down my musings and ultimate goals for this project. This seems like a fine document to do so!
+
+Main Objective:
+
+ - Allow users to add books to a virtual bookshelf. The homepage will list the current NYT Bestseller's list, but they can also search other lists from the homepage. 
+ - Each book will have a /books/:id page which lists some info about the book, and includes a link to purchase the book from Amazon. If the user is logged-in, the user can add the book to their bookshelf. 
+ - Users can comment on books that are on their bookshelf. The /users/:id page will show the current book(s) the user is reading at the top, followed by a carosel that shows the books in their bookshelf.
+ - If the user doesn't have any books in their bookshelf, their /users/:id page will have a prompt to add some
+ - User's can search for books on any page, the searchbar should be built in to the nav and the results should have a consistent way of being displayed on each page (maybe some front-end JS?)
+
+
+Programming Focus
+
+- Keep design/css to a min, but get some basic layout skills together with this project. Look into Flexbox and Grid, and start laying out elements on the page in a clean, organized way.
+- Don't worry about mobile-first at this point, set the project to be constrained within a certain page size and make this a caveat.
+- Don't worry about fonts/colors/design. Just get the elements positioned on the page and within other elements correctly and you win.
+- Use Normalize.css, and bust the cache on each request, to make sure that you have full control over what is getting sent/rendered by the client.
+- Don't worry about login/user-authentication logic. This will be the focus of later sections in your Udemy courses, and you can add this then.
+- Do a little front-end JS work on this project. Won't need much, but maybe find a place where it is appropriate.
