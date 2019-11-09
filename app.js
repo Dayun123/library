@@ -17,7 +17,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 // bust the cache for development: https://stackoverflow.com/a/53240717/5347875
 app.use((req, res, next) => {
@@ -26,6 +25,8 @@ app.use((req, res, next) => {
   }
   next();
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
