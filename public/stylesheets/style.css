@@ -1,2 +1,29 @@
 @import url("normalize.css");
 
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Login Form */
+
+form {
+  width: 50%;
+}
+
+.form-element {
+  margin: 10px 0;
+}
+
+label {
+  display: inline-block;
+  width: 75px;
+}
+
+input {
+  width: 125px;
+}
+
+input[type="submit"] {
+  width: 100px;
+}

@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
-  <form action="/login" method="post"> 
+  <form action="/login" method="post" class="center"> 
     <div class="form-element">
       <label for="username">Username:</label>
       <input type="text" name="username" id="username" required>
@@ -13,7 +14,7 @@
       <label for="password">Password:</label>
       <input type="password" name="password" id="password" required>
     </div>
-    <div class="form-element">
+    <div class="form-element login-btn">
       <input type="submit" value="Login">
     </div>
   </form>
