@@ -6,7 +6,11 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  res.json(req.body);
+  if (req.body.username === 'Dayun123' && req.body.password === 'p') {
+    res.redirect('/');
+  } else {
+    res.redirect('/login');
+  }
 });
 
 module.exports = router;
