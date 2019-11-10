@@ -9,6 +9,10 @@
   <nav>
     <ul>
       <li class="nav-left"><a href="/">Virtual Library</a></li>
+      <% if (username) { %>
+      <li class="nav-right"><a href="/logout">Logout</a></li>
+      <% } else { %>
       <li class="nav-right"><a href="/login">Login</a></li>
+      <% } %>
     </ul>
   </nav>
