@@ -29,8 +29,8 @@ router.get('/', async (req, res, next) => {
     return list.list_name === 'Hardcover Fiction';
   });
   
-  res.json(hardcoverFictionList);
-  // res.render('index', { pageTitle: 'Library' });
+  // res.json(hardcoverFictionList);
+  res.render('index', { pageTitle: 'Library' });
 });
 
 module.exports = router;

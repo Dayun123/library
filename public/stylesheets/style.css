@@ -1,5 +1,17 @@
 @import url("normalize.css");
 
+/* Global Styles */
+
+body {
+  background-color: #333;
+}
+
+.site-container {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: red;
+}
+
 .center {
   margin: 0 auto;
   text-align: center;
