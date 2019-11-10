@@ -63,10 +63,14 @@ nav a {
 img {
   width: 320px;
   height: 460px;
+}
+
+.row a {
+  display: inline-block;
   margin: 15px 15px 15px 0;
 }
 
-img:last-child {
+.row a:last-child {
   margin-right: 0;
 }
 
