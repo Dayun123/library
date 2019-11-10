@@ -12,7 +12,7 @@ router.get('/:isbn10', async (req, res, next) => {
   const { items } = await apiJSONRequest(query);
   const bookInfo = items[0];
 
-  res.json(bookInfo);
+  res.render('books', { pageTitle: bookInfo.volumeInfo.title });
 });
 
 module.exports = router;
