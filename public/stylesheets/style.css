@@ -58,6 +58,18 @@ nav a {
   font-size: 18px;
 }
 
+/* Homepage Images */ 
+
+img {
+  width: 320px;
+  height: 460px;
+  margin: 15px 15px 15px 0;
+}
+
+img:last-child {
+  margin-right: 0;
+}
+
 /* Login Form */
 
 form {

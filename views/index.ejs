@@ -1,2 +1,17 @@
 <% include partials/header %>
+
+<% hardcoverFictionList.forEach((book, i) => { %>
+
+<% if (i == 0 || i % 3 == 0) { %>
+<div class="row">
+<% } %>
+
+<img src="<%= book.book_image %>">
+
+<% if ((i > 1) && (i % 2 == 0 || i % 3 == 1)) { %>
+</div>
+<% } %>
+
+<% }); %>
+
 <% include partials/footer %>
