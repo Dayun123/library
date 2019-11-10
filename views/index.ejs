@@ -6,7 +6,7 @@
 <div class="row">
 <% } %>
 
-<a href="/books/<%= book.primary_isbn10 %>"><img src="<%= book.book_image %>"></a>
+<a href="/books/<%= book.primary_isbn13 %>"><img src="<%= book.book_image %>"></a>
 
 <% if ((i > 1) && (i % 2 == 0 || i % 3 == 1)) { %>
 </div>
