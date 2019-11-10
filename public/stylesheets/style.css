@@ -2,19 +2,60 @@
 
 /* Global Styles */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: #333;
+  border: 1px dashed #666;
 }
 
 .site-container {
   margin: 0 auto;
   width: 1000px;
-  background-color: red;
+  border: 1px solid #333;
 }
 
 .center {
   margin: 0 auto;
   text-align: center;
+}
+
+/* Nav */
+
+nav {
+  margin-top: 12px;
+  padding: 0px;
+  border: 1px solid red;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 4px 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left {
+  font-size: 32px;
+  left: 2%;
+}
+
+.nav-right {
+  left: 73%;
+  font-size: 18px;
 }
 
 /* Login Form */
