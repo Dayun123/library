@@ -7,6 +7,7 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
   if (req.body.username === 'Dayun123' && req.body.password === 'p') {
+    res.cookie('username', 'Dayun123');
     res.redirect('/');
   } else {
     res.redirect('/login');
