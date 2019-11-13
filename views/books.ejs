@@ -1,4 +1,4 @@
 <% include partials/header %>
-<img class="bookpage-main-img" src="<%= bookInfo.imageLink %>">
+<a href="<%= bookInfo.saleInfo.buyLink %>" target="_blank"><img class="bookpage-main-img" src="<%= bookInfo.imageLink %>"></a>
 <p class="book-description"><%= bookInfo.volumeInfo.description %></p>
 <% include partials/footer %>
