@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   res.clearCookie('username');
-  res.redirect('/');
+  res.redirect(req.get('referrer'));
 });
 
 module.exports = router;
