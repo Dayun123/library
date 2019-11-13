@@ -69,12 +69,12 @@ img {
   height: 460px;
 }
 
-.row a {
+.homepage-img {
   display: inline-block;
   margin: 0 15px 15px 0;
 }
 
-.row a:last-child {
+.homepage-img:last-child {
   margin-right: 0;
 }
 
