@@ -1,8 +1,8 @@
 <% include partials/header %>
-<a href="<%= bookInfo.saleInfo.buyLink %>" target="_blank"><img class="bookpage-main-img" src="<%= bookInfo.imageLink %>"></a>
-<p class="book-description"><%= bookInfo.volumeInfo.description %></p>
+<a href="<%= bookInfo.saleInfo.buyLink %>" target="_blank"><img class="bookpage-main-img center" src="<%= bookInfo.imageLink %>"></a>
+<p class="book-description center"><%= bookInfo.volumeInfo.description %></p>
 <% if (username) { %>
-<form method="post" action="/users/1/add/1234">
+<form method="post" action="/users/1/add/1234" class="center">
   <button type="submit">Add To Reading List</button>
 </form>
 <% } %>
