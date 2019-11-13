@@ -19,6 +19,10 @@ body {
   border: 1px solid #333;
 }
 
+.row {
+  margin-top: 12px;
+}
+
 .center {
   margin: 0 auto;
   text-align: center;
@@ -67,7 +71,7 @@ img {
 
 .row a {
   display: inline-block;
-  margin: 15px 15px 15px 0;
+  margin: 0 15px 15px 0;
 }
 
 .row a:last-child {
