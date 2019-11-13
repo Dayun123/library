@@ -36,6 +36,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/login', (req, res, next) => {
+  app.set('loginReferrer', req.get('referrer'));
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);

@@ -29,7 +29,7 @@ router.get('/', async (req, res, next) => {
     return list.list_name === 'Hardcover Fiction';
   });
   
-  console.log(hardcoverFictionList);
+  // console.log(hardcoverFictionList);
 
   // res.json(hardcoverFictionList);
   res.render('index', { pageTitle: 'Library', hardcoverFictionList });
