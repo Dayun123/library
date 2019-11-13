@@ -96,3 +96,10 @@ input {
 input[type="submit"] {
   width: 100px;
 }
+
+/* /books/:isb13 page */
+
+.bookpage-main-img {
+  display: block;
+  margin: 0 auto;
+}
